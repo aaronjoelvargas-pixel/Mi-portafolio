@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset=" utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Aaron Joel Vargas</h1>
+        <p>Desarrollador Full Stack | freelacer</p>
+    </header>
+
+    <section id="sobre mi">
+        <h2>Sobre mi:</h2>
+        <p>Soy un apasionado de la programacion y desarrollo web. Me gusta crear paginas y aplicaciones modernas y
+            funcionales.</p>
+    </section>
+
+    <section id="habilidades" class="section-animada">
+        <h2>Habilidades:</h2>
+        <ul>
+            <li><i class="fab fa-html5"></i>HTML</li>
+            <li><i class="fab fa-css3-alt"></i>CSS</li>
+            <li><i class="fab fa-js-square"></i>JavaSript</li>
+            <li><i class="fab fa-react"></i>React + Next.js</li>
+            <li><i class="fab fa-node"></i>Node.js</li>
+            <li><i class="fab fa-database"></i>Base de datos</li>
+        </ul>
+    </section>
+
+    <section id="proyecto" class="section-animada">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Proyecto1: Sitio web personal</h3>
+             <p>Una pagina web creada completamente con HTML Y CSS, con diseño responsivo</p>
+            <img src="imagen1.jpg" alt="proyecto1">
+           
+        </div>
+
+        <div class="proyecto">
+            <h3>Proyecto2: Aplicacion de tareas</h3>
+             <p>Aplicacion web para gestionar tareas con JavaScript y almacenamiento local.</p>
+            <img src="imagen2.jpg" alt="proyecto2">
+           
+        </div>
+    </section>
+
+    <section id="contacto" class="section-animada">
+        <h2>Contacto:</h2>
+        <P>Email: <a href="mailto:miemail@gmail.com">miemail@gmail.com</a></P>
+        <p>Linkedin: <a href="link" target="_blank">Mi perfil</a></p>
+        <p>Github: <a href="link" target="_blank">Github</a></p>
+
+        <button id="btn-contacto">!Contactame!</button>
+
+        <form id="form-contacto" class="form-oculto">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="email" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" requiredZ>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> &copy; 2025 Aaron Joel Vargas</p>
+    </footer>
+    <script src="botones.js"></script>
+
+</body>
+
+</html>

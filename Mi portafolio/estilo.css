@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to left, #f4f4f9, #cdd6f5);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #4b7a99;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: headeranimation 1.5s ease-out forwards;
+}
+
+@keyframes headeranimation {
+    0% {
+        opacity: 0;
+        transform: translatey(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section-animada {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8 ease, transform 0.8 ease;
+}
+
+.section-animada.visible {
+    opacity: 1;
+    transform: translatey(0);
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+
+section:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3 ease;
+}
+
+.proyecto img:hover {
+    transform: scale(1.05);
+
+}
+
+#btn-contacto {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3 ease, transform 0.2 ease;
+}
+
+#btn-contacto:hover {
+    background-color: #1f6093;
+    transform: scale(1.05);
+}
+
+.form-oculto {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.form-visible {
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1f6093;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    margin-top: 40px;
+}
+
+@media(max-width:600px) {
+    section {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
